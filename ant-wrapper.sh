@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 version="1.9.16"
 
@@ -7,9 +8,4 @@ if [ ! -d "/tmp/apache-ant-${version}" ]; then
   unzip "/tmp/apache-ant-${version}-bin.zip" -d /tmp
 fi
 
-for i in $*;
-do
-    params=" $params $i"
-done
-
-"/tmp/apache-ant-${version}/bin/ant" $params
+"/tmp/apache-ant-${version}/bin/ant" $@
