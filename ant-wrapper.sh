@@ -8,4 +8,4 @@ if [ ! -d "/tmp/apache-ant-${version}" ]; then
   unzip "/tmp/apache-ant-${version}-bin.zip" -d /tmp
 fi
 
-"/tmp/apache-ant-${version}/bin/ant" $@
+"/tmp/apache-ant-${version}/bin/ant" "$@"
