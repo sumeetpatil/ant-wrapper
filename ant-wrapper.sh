@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
 
-version="1.9.16"
-ANT_DOWNLOAD_SHA512="b9324cffeb5b113fa289126db1408b9a0125757b598d763f076fc5deec97fb43f27979974cadcac79b6573d84dcb2d1d5bf59b7972fb2abe5ed3d9fed445b04e"
+version="1.10.13"
+ANT_DOWNLOAD_SHA512="347e964db73d1f8e9fe110f135625920e09c8c9997e9950c405cfeec60b70750044a91ef0535d76d6f8e023de0788f2619be76fd91b7a80be9a6b569a16cc3e8"
 
 if [ ! -d "/tmp/apache-ant-${version}" ]; then
   wget "https://dlcdn.apache.org/ant/binaries/apache-ant-${version}-bin.zip" -O "/tmp/apache-ant-${version}-bin.zip"
